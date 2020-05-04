@@ -1,0 +1,10 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }}</li>
+            <a href="?c=user&a=one&id={{user.id}}">{{user.info}}</a>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
