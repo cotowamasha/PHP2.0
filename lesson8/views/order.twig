@@ -1,0 +1,10 @@
+{% extends 'layouts/main.twig' %}
+
+{% block content %}
+    <p>Сумма заказа: {{ sumPrice }}</p>
+    <p>Товаров в корзине: {{ sumCount }}</p>
+    <form method="post">
+        <textarea name="address" cols="30" rows="10" placeholder="Введите адрес доставки"></textarea>
+        <input type="submit">
+    </form>
+{% endblock %}

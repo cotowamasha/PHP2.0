@@ -1,0 +1,9 @@
+{% extends 'layouts/main.twig' %}
+
+{% block content %}
+    <h3>Добро пожаловать, {{ login }}</h3>
+    <a href="/auth/logout">Выйти</a>
+    <div>
+        <a href="/good/insert">Добавить новый товар в каталог</a>
+    </div>
+{% endblock %}
